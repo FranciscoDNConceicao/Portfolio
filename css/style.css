@@ -63,10 +63,33 @@ body, html {
     margin: 0px 30px;
     font-family: fantasy;
     color:#F2F2F2;
+    position: relative;
+    padding: 5px 2px 5px 2px;
+    z-index: 3;
 }
 .header-link a:hover{
-    color: #E6E6E6;
+    color: #0A0B0D;    
 }
+.header-link a::before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+.header-link a:hover::before {
+    transform: scaleX(1);
+    
+    transform-origin: bottom left;
+}
+.header-link a::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: #F2F2F2;
+    z-index: 0;
+    transition: transform .3s ease;
+}
+
 .header-link .line{
     height: 20px;
     width: 1px;
@@ -75,6 +98,8 @@ body, html {
 .header-abs{
     display: flex;
     margin-right: 50px;
+    width: 750px;
+
 }
 .header-contact{
     margin-left: 20px;
