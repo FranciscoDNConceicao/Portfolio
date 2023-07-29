@@ -26,7 +26,7 @@ body, html {
     display:grid;
 }
 .main .first-area{
-    background-image: url('../Images/background.jpg');
+    background-image: url('../Images/background-1.jpg');
     background-size: cover;
     background-position: center;
     display: grid;
@@ -64,11 +64,11 @@ body, html {
     font-family: fantasy;
     color:#F2F2F2;
     position: relative;
-    padding: 5px 2px 5px 2px;
+    padding: 10px 15px 10px 15px;
     z-index: 3;
 }
 .header-link a:hover{
-    color: #0A0B0D;    
+    color: #0A0B0D; 
 }
 .header-link a::before {  
     transform: scaleX(0);
@@ -76,7 +76,6 @@ body, html {
 }
 .header-link a:hover::before {
     transform: scaleX(1);
-    
     transform-origin: bottom left;
 }
 .header-link a::before {
@@ -85,11 +84,12 @@ body, html {
     position: absolute;
     top: 0; right: 0; bottom: 0; left: 0;
     inset: 0 0 0 0;
-    background: #F2F2F2;
-    z-index: 0;
+    background-color: #F2F2F2;
+    border: 2px solid #0A0B0D;
+    z-index: -1;
     transition: transform .3s ease;
+    border-radius: 20px;
 }
-
 .header-link .line{
     height: 20px;
     width: 1px;
@@ -98,8 +98,7 @@ body, html {
 .header-abs{
     display: flex;
     margin-right: 50px;
-    width: 750px;
-
+    width: 850px;
 }
 .header-contact{
     margin-left: 20px;
@@ -108,33 +107,54 @@ body, html {
     font-size: 30px;
     margin: 0px 10px;
 }
+.header-contact .header-icons:hover{
+    background-color: #F2F2F2;
+    padding: 3px;
+    border-radius: 10px;
+    border: 1px solid #0A0B0D;
+}
+.header-contact .header-icons i:hover{
+    color: #0A0B0D;
+}
 .main-window{
     z-index: 3;
     width: 100%;
     height: 700px;
-    margin-bottom: 80px;
+    margin-bottom: 150px;
 }
 .main-title{
-    height: auto;
-    margin-top: 300px;
-    margin-left: 40px;
+    background-color: transparent;
+    width: 1500px;
+    margin-top: 100px;
+    padding-left: 40px;
     text-align: left;
+    padding: 20px 0px 20px 40px;
     align-items: center;
-
 }
 .main-title .main-title-zone{
-    font-size: 35px;
+    font-size: 30px;
     color: white;
     margin-left: 30px;
-    
+    position: relative;
+    animation: animation 2s ease-out;
 }
+@keyframes animation {
+    0% {
+      opacity: 0;
+      left: -700px;
+    }
 
+    100% {
+      opacity: 1;
+      left: 0;
+    }
+  }
 .main-title .main-title-zone .second-title{
     font-family: 'Roboto Mono', monospace;
     color: white;
     font-size: 25px;
+    font-weight: 900;
 }
-
 .about-me-zone{
     padding: 50px 100px;
     color: #0A0B0D;
@@ -142,14 +162,13 @@ body, html {
     background-color: #F2F2F2;
     padding-bottom: 100px;
 }
-
 .about-me-zone .about-me-title{
     font-weight: bolder;
     font-size: 30px;
 }
 .about-me-zone .about-me-desc{
-    font-family: 'Roboto Mono', monospace;
-    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 200;
     padding-left: 30px;
     font-size: 23px;
 }
@@ -189,8 +208,8 @@ body, html {
 }
 .skill-desc{
     font-size: 18px;
-    font-family: 'Roboto Mono', monospace;
-    font-weight: 900;
+    font-family: fantasy;
+    font-weight: 100;
     margin-left: 40px;
 }
 .projects-zone{
@@ -347,5 +366,4 @@ body, html {
 .footer-zone .footer-name{
     font-size: 20px;
     font-weight: 600;
-
 }
