@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Roboto+Mono:wght@100;200&family=Roboto:wght@300&display=swap');
 
 body, html {
     margin: 0px;
@@ -45,13 +46,14 @@ body, html {
 .title-header{
     text-align: center;
     font-size: 25px;
-    font-family: fantasy;
+    font-family: 'Cabin', sans-serif;
     
 }
 .subtitle-header{
     text-align: center;
     font-size: 16px;
     color: #F2F2F2;
+    font-family: 'Cabin', sans-serif;
 }
 .header-link{
     display: flex;
@@ -61,7 +63,7 @@ body, html {
     text-decoration: none;
     font-size: 21px;
     margin: 0px 30px;
-    font-family: fantasy;
+    font-family: Arial, Helvetica, sans-serif;
     color:#F2F2F2;
     position: relative;
     padding: 10px 15px 10px 15px;
@@ -107,14 +109,9 @@ body, html {
     font-size: 30px;
     margin: 0px 10px;
 }
-.header-contact .header-icons:hover{
-    background-color: #F2F2F2;
-    padding: 3px;
-    border-radius: 10px;
-    border: 1px solid #0A0B0D;
-}
+
 .header-contact .header-icons i:hover{
-    color: #0A0B0D;
+    color: #F2F2F2;
 }
 .main-window{
     z-index: 3;
@@ -137,6 +134,7 @@ body, html {
     margin-left: 30px;
     position: relative;
     animation: animation 2s ease-out;
+    font-family: 'Cabin', sans-serif;
 }
 @keyframes animation {
     0% {
@@ -158,7 +156,7 @@ body, html {
 .about-me-zone{
     padding: 50px 100px;
     color: #0A0B0D;
-    font-family: fantasy;
+    font-family: 'Cabin', sans-serif;
     background-color: #F2F2F2;
     padding-bottom: 100px;
 }
@@ -173,12 +171,14 @@ body, html {
     font-size: 23px;
 }
 .skill-zone{
-    margin: 70px 200px;
+    margin: 30px 100px;
     height: 500px;
 }
 .skill-zone h1{
     color: #F2F2F2;
     font-size: 40px;
+    margin-bottom: 70px;
+    font-family: 'Cabin', sans-serif;
 }
 .skill-zone .skills-list .three-skills-area{
     list-style-type: none;
@@ -204,11 +204,11 @@ body, html {
     margin: 10px 0px 0px 40px;
     font-size: 25px;
     font-weight: 700;
-    font-family: fantasy;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .skill-desc{
     font-size: 18px;
-    font-family: fantasy;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
     margin-left: 40px;
 }
@@ -216,13 +216,14 @@ body, html {
     background-color: white;
 }
 .projects-zone h1{
-    margin-left: 200px;
+    font-family: 'Cabin', sans-serif;
+    margin-left: 100px;
     margin-top: 100px;
     margin-bottom: 80px;
     font-size: 40px;
 }
 .projects-zone-post{
-    margin: 40px 200px;
+    margin: 40px 150px;
     
 }
 .projects-zone-post .two-project-area{
@@ -246,9 +247,8 @@ body, html {
     height: 600px;
     display: flex;
     flex-direction: column;
-    font-family: fantasy;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
 .project-post .project-post-title{
     font-size: 24px;
     margin-bottom: 13px;
@@ -321,20 +321,23 @@ body, html {
 
 .Education-zone{
     color: white;
-    margin: 50px 300px;
+    margin: 50px 100px;
     
 }
 .Education-zone h1{
     font-size: 40px;
+    font-family: 'Cabin', sans-serif;
 }
 .Education-zone ul{
+    margin-top: -50px;
+    margin-left: 200px;
     list-style-type: none;
     display: flex;
     flex-direction: column;
 }
 .Education-zone ul li{
     margin-left: 30px;
-    font-family: fantasy;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .Education-zone ul li .education-grad{
     font-size: 30px;
