@@ -4,6 +4,7 @@ import ProjectsView from '../../components/ProjectsView';
 import qbo1 from '../../assets/Images/QBO-Project-1.png';
 import qbo2 from '../../assets/Images/QBO-Project-2.png';
 import stockfinance from '../../assets/Images/StockFinance-project.png';
+import thegaminghourVideo from '../../assets/Images/TheGammingHour-Project.mp4';
 
 export default function ProjectsFrame(props: InterfaceFrame) {
     const ClickOnGetHome = () => {
@@ -44,7 +45,10 @@ export default function ProjectsFrame(props: InterfaceFrame) {
                     </div>
                     <div className='m-[20px]'>
                         <div className="media-project flex justify-center align-middle">
-«
+                            <video controls autoPlay className='w-[580px]'>
+                                <source src={thegaminghourVideo} type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
                         </div>                        
                         <ProjectsView 
                             title='The Gamming Hour'
