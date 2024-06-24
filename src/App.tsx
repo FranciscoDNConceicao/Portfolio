@@ -6,6 +6,7 @@ import IndexSkillsFrame from "./pages/SkillsFrame";
 import PathFrame from "./pages/PathFrame";
 import ContactCVFrame from "./pages/ContactCVFrame";
 import ProjectsFrame from "./pages/ProjectsFrame";
+import { TypeAnimation } from "react-type-animation";
 
 function App() {
 
@@ -20,7 +21,6 @@ function App() {
 
   const [isVisibleContactCVComponent, setIsVisibleContactCVComponet] = useState(false);
   const [isVisibleContactComponentBack, setIsVisibleContactCVComponetBack] = useState(false);
-
 
   const ClickOnSkillsFrame = () => {
     setIsVisibleSkillsComponet(true)
@@ -99,11 +99,20 @@ function App() {
       </div>
       <div className="flex flex-row items-center">
         <div className="flex w-[40%] justify-end max-[1000px]:hidden">
-          <img className="img-me rounded-[60%] mr-[30px] border-[2px] border-black " src={euImage} />
+          <img className="img-me rounded-[60%] mr-[30px] border-[2px] border-black" src={euImage}/>
         </div>
         <div className="max-[1000px]:m-[100px]">
+          
           <div className="mont-real-font bolder text-[50px] text-third">
-            Hi! Welcome to my website!!
+            <TypeAnimation
+              sequence={[
+                'Hi!', 
+                2000,
+                'Hi! Welcome to my website!!'
+              ]}
+              wrapper="span"
+            />
+          
           </div>
           <div className="w-[90%] roboto-condensed-font text-[25px] text-third">
               I'm Francisco Conceição, a passionate software developer with a passion for creating innovative and efficient software solutions.

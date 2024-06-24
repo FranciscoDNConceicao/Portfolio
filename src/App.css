@@ -175,6 +175,10 @@ html, body, #root{
 		transform: translateY(-100%);
 	}
 }
+
+
+
+
 .fade-in-bot {
     animation: fade-in-bot 2s ease 0s 1 normal forwards;
 }

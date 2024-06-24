@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay } from '@fortawesome/free-solid-svg-icons';
 import SkillsView from '../../components/SkillsView';
 import PythonImage from '../../assets/Images/Skills/python.png'
-import ReactImage from '../../assets/Images/Skills/React-icon.svg'
+import ReactImage from '../../assets/Images/Skills/react.png'
 import CSharpImage from '../../assets/Images/Skills/c-sharp.png'
 import SQLImage from '../../assets/Images/Skills/sql.png'
 import GitImage from '../../assets/Images/Skills/git.png'
