@@ -46,7 +46,7 @@ export default function TreePathView(props: TreePathViewProps) {
                     if(height >= 284 && height <= 286){
                         setDoAnimationSecondCircle(true)
                     }
-                    if(height >= 524 && height <= 526){
+                    if(height >= 520 && height <= 526){
                         setDoAnimationThirdCircle(true)
                     }
                     if(height >= 699 && height <= 701){
