@@ -67,16 +67,16 @@ export default function TreePathView(props: TreePathViewProps) {
     }, [doAnimation])
 
     return (
-        <div>
+        <div className='max-[1000px]:text-[14px]'>
             <div ref={principalPath} className={`absolute w-[5px] bg-[#0D0D0D] ${doAnimation ? 'fade-path' : ''}`} ></div>
-            <div className={`absolute text-[20px] mont-real-font translate-x-[20px]`}>October, 2017</div>
-            <div className={`absolute w-[20px] h-[20px] bg-[#0D0D0D] rounded-[20px] translate-x-[-7px] translate-y-[93px] ${doAnimationFirstCircle ? 'fade-dates-path' : 'hidden'}`}></div>
-            <div className={`absolute text-[20px] mont-real-font translate-y-[89px] translate-x-[25px] ${doAnimationFirstCircle ? 'fade-dates-path' : 'hidden'}`}>June, 2020</div>
-            <div className={`absolute w-[20px] h-[20px] bg-[#0D0D0D] rounded-[20px] translate-x-[-7px] translate-y-[285px] ${doAnimationSecondCircle ? 'fade-dates-path' : 'hidden'}`}></div>
-            <div className={`absolute text-[20px] mont-real-font translate-y-[280px] translate-x-[-120px] ${doAnimationSecondCircle ? 'fade-dates-path' : 'hidden'}`}>July, 2023</div>
-            <div className={`absolute w-[20px] h-[20px] bg-[#0D0D0D] rounded-[20px] translate-x-[-7px] translate-y-[525px] ${doAnimationThirdCircle ? 'fade-dates-path' : 'hidden'}`}></div>
-            <div className={`absolute text-[20px] mont-real-font translate-y-[520px] translate-x-[25px] ${doAnimationThirdCircle ? 'fade-dates-path' : 'hidden'}`}>September, 2023</div>
-            <div className={`absolute text-[20px] mont-real-font translate-y-[700px] translate-x-[25px] ${doAnimationFourCircle ? 'fade-dates-path' : 'hidden'}`}>Soon?</div>
+            <div className={`max-[1000px]:text-[14px] absolute text-[20px] mont-real-font translate-x-[20px]`}>October, 2017</div>
+            <div className={`max-[1000px]:text-[14px] absolute w-[20px] h-[20px] bg-[#0D0D0D] rounded-[20px] translate-x-[-7px] translate-y-[93px] ${doAnimationFirstCircle ? 'fade-dates-path' : 'hidden'}`}></div>
+            <div className={`max-[1000px]:text-[14px] absolute text-[20px] mont-real-font translate-y-[89px] translate-x-[25px] ${doAnimationFirstCircle ? 'fade-dates-path' : 'hidden'}`}>June, 2020</div>
+            <div className={`max-[1000px]:text-[14px] absolute w-[20px] h-[20px] bg-[#0D0D0D] rounded-[20px] translate-x-[-7px] translate-y-[285px] ${doAnimationSecondCircle ? 'fade-dates-path' : 'hidden'}`}></div>
+            <div className={`max-[1000px]:text-[14px] absolute text-[20px] mont-real-font translate-y-[280px] translate-x-[-120px] ${doAnimationSecondCircle ? 'fade-dates-path' : 'hidden'}`}>July, 2023</div>
+            <div className={`max-[1000px]:text-[14px] absolute w-[20px] h-[20px] bg-[#0D0D0D] rounded-[20px] translate-x-[-7px] translate-y-[525px] ${doAnimationThirdCircle ? 'fade-dates-path' : 'hidden'}`}></div>
+            <div className={`max-[1000px]:text-[14px] absolute text-[20px] mont-real-font translate-y-[520px] translate-x-[25px] ${doAnimationThirdCircle ? 'fade-dates-path' : 'hidden'}`}>September, 2023</div>
+            <div className={`max-[1000px]:text-[14px] absolute text-[20px] mont-real-font translate-y-[700px] translate-x-[25px] ${doAnimationFourCircle ? 'fade-dates-path' : 'hidden'}`}>Soon?</div>
                 <div className={`absolute translate-x-[-110%] translate-y-[89px] ${doAnimationFirstCircle ? 'fade-dates-path' : 'hidden'}`}>
                     <FormViewPath 
                         title='High School'

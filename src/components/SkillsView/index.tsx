@@ -31,9 +31,9 @@ export default function SkillsView(props: SkillsViewFrame) {
     
 
     return (
-        <div className='w-[600px] h-[150px] flex flex-col'>
+        <div className='w-[600px] h-[150px] flex flex-col max-[1000px]:w-[400px]'>
             <div className='flex flex-row'>
-                <div className='flex bg-[#262626] w-[120px] h-[120px] justify-center items-center'>
+                <div className='flex bg-[#262626] w-[120px] h-[120px] justify-center items-center max-[1000px]:hidden'>
                     <img src={props.image} className='p-[15px]'></img>
                 </div>
                 <div className='flex flex-col ml-[30px] w-[478px]'>
@@ -41,9 +41,9 @@ export default function SkillsView(props: SkillsViewFrame) {
                     <div className='roboto-condensed-font text-[22px]'>{props.description}</div>
                 </div>
             </div>
-            <div className='mt-[15px] w-[600px] h-[18px] border-[2px] border-[#262626]'>
+            <div className='mt-[15px] w-[600px] h-[18px] border-[2px] border-[#262626] max-[1000px]:hidden'>
                 <div className='h-full' style={widthbar}>
-                    <div className={`h-full bg-[#262626] ${visible ? 'fade-in-right-width' : 'fade-out-right-width'} `}></div>
+                    <div className={` h-full bg-[#262626] ${visible ? 'fade-in-right-width' : 'fade-out-right-width'} `}></div>
                 </div>
             </div>
         </div>

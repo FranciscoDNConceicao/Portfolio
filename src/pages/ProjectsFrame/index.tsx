@@ -11,17 +11,17 @@ export default function ProjectsFrame(props: InterfaceFrame) {
         props.goBack('down')
     }
     return (
-        <div className="h-screen w-screen bg-[#404040]">
+        <div className="h-screen w-screen bg-[#404040] ">
             <div className="flex flex-col w-[130px] h-[95px] absolute top-0 left-1/2 transform -translate-x-1/2 text-third justify-center items-center rotate-[270deg]" onClick={ClickOnGetHome}>
                 <FontAwesomeIcon icon={faPlay} className="cursor-pointer w-[50px] h-[35px] rotate-[0deg] text-fifth" />
             </div>
 
             <div className='h-screen'> 
                 <div className="pt-[100px] w-screen flex odibee-sans text-third text-[64px] justify-center ">Projects</div>
-                <div className='w-full flex flex-row justify-center max-[1000px]:flex-col max-[1000px]:overflow-scroll'>
+                <div className='w-full flex flex-row justify-center max-[1000px]:flex-col max-[1000px]:overflow-scroll '>
                     <div className='m-[20px]'>
                         <div className='flex'>
-                            <img src={qbo1} className='max-w-[310px] max-h-[310px]'/>
+                            <img src={qbo1} className='max-w-[310px] max-h-[310px] max-[1000px]:hidden'/>
                         
                             <img src={qbo2} className='ml-[40px] max-w-[270px] max-h-[310px]'/>
                         </div>
@@ -34,7 +34,7 @@ export default function ProjectsFrame(props: InterfaceFrame) {
                     </div>
                     <div className='m-[20px]'>
                         <div className=''>
-                            <img src={stockfinance} className='w-[580px] h-[310px]' />
+                            <img src={stockfinance} className='w-[580px] h-[310px] max-[1000px]:w-[280px] max-[1000px]:h-[180px]' />
                         </div>
                         <ProjectsView 
                             title='Stock Finance WebApp'
@@ -45,7 +45,7 @@ export default function ProjectsFrame(props: InterfaceFrame) {
                     </div>
                     <div className='m-[20px]'>
                         <div className="media-project flex justify-center align-middle">
-                            <video controls autoPlay className='w-[580px]'>
+                            <video controls autoPlay className='w-[580px] max-[1000px]:w-[500px] '>
                                 <source src={thegaminghourVideo} type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>

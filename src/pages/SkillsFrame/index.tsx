@@ -74,7 +74,7 @@ export default function IndexSkillsFrame(props: InterfaceFrame) {
             <div>
                 <div className="w-screen flex odibee-sans text-primary text-[64px] justify-center">Skills</div>
             </div>
-            <div className='h-[700px] mx-[100px] my-[50px] grid grid-rows-4 grid-cols-2 max-[1000px]:h-[100%] max-[1000px]:flex max-[1000px]:flex-col max-[1000px]:overflow-scroll'>
+            <div className='max-[1000px]:mx-[0px] h-[700px] mx-[100px] my-[50px] grid grid-rows-4 grid-cols-2 max-[1000px]:h-[100%] max-[1000px]:flex max-[1000px]:flex-col max-[1000px]:overflow-scroll'>
             {
                 SkillsData.map(item => {
                     if (item) {

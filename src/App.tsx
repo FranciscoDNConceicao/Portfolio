@@ -79,22 +79,22 @@ function App() {
                         ${isVisibleContactCVComponent ? 'fade-in-right' : `${!isVisibleContactComponentBack ? 'translate-x-[-100%]' : ''}`} z-10`}>
         {<ContactCVFrame goBack={goBackSkills}/>}
       </div>
-      <div className="absolute h-screen w-screen flex justify-screen items-start z-0">
-        <div className="flex flex-col w-[130px] h-[95px] absolute top-0 left-1/2 transform -translate-x-1/2 text-third justify-center items-center" onClick={ClickOnPathFrame}>
-          <FontAwesomeIcon icon={faPlay} className="cursor-pointer w-[50px] h-[35px] rotate-[270deg] text-[#D9D9D9]"/>
-          <div className="mont-real-font text-[16px] m-[5px]">My journey</div>
+      <div className="absolute h-screen w-screen flex justify-screen items-start z-0 ">
+        <div className="flex flex-col w-[130px] h-[95px] absolute top-0 left-1/2 transform -translate-x-1/2 text-third justify-center items-center max-[1000px]:w-[70px] max-[1000px]:h-[50px]" onClick={ClickOnPathFrame}>
+          <FontAwesomeIcon icon={faPlay} className="cursor-pointer w-[50px] h-[35px] rotate-[270deg] text-[#D9D9D9] max-[1000px]:w-[20px] max-[1000px]:h-[20px]"/>
+          <div className="mont-real-font text-[16px] m-[5px] max-[1000px]:text-[10px]">My journey</div>
         </div>
-        <div className="flex flex-col w-[130px] h-[95px] absolute bottom-0 left-1/2 transform -translate-x-1/2 text-third justify-center items-center" onClick={ClickOnProjectsFrame}>  
-          <div className="mont-real-font text-[16px] m-[5px]">Projects</div>
-          <FontAwesomeIcon icon={faPlay} className="cursor-pointer w-[50px] h-[35px] rotate-[90deg] text-[#D9D9D9]"/>
+        <div className="flex flex-col w-[130px] h-[95px] absolute bottom-0 left-1/2 transform -translate-x-1/2 text-third justify-center items-center max-[1000px]:w-[70px] max-[1000px]:h-[50px]" onClick={ClickOnProjectsFrame}>  
+          <div className="mont-real-font text-[16px] m-[5px] max-[1000px]:text-[10px]">Projects</div>
+          <FontAwesomeIcon icon={faPlay} className="cursor-pointer w-[50px] h-[35px] rotate-[90deg] text-[#D9D9D9] max-[1000px]:w-[20px] max-[1000px]:h-[20px]"/>
         </div>
-        <div className="flex flex-col w-[130px] h-[95px] absolute right-0 top-1/2 transform -translate-y-1/2 text-third justify-center items-center rotate-[270deg]" onClick={ClickOnCVContactFrame}>  
-          <div className="mont-real-font text-[16px] m-[5px]">Contact & CV</div>
-          <FontAwesomeIcon icon={faPlay} className="cursor-pointer w-[50px] h-[35px] rotate-[90deg] text-[#D9D9D9]"/>
+        <div className="flex flex-col w-[130px] h-[95px] absolute right-0 top-1/2 transform -translate-y-1/2 text-third justify-center items-center rotate-[270deg] max-[1000px]:w-[90px] max-[1000px]:h-[50px]" onClick={ClickOnCVContactFrame}>  
+          <div className="mont-real-font text-[16px] m-[5px] max-[1000px]:text-[10px]">Contact & CV</div>
+          <FontAwesomeIcon icon={faPlay} className="cursor-pointer w-[50px] h-[35px] rotate-[90deg] text-[#D9D9D9] max-[1000px]:w-[20px] max-[1000px]:h-[20px]"/>
         </div>
-        <div className="flex flex-col w-[130px] h-[95px] absolute left-0 top-1/2 transform -translate-y-1/2 text-third justify-center items-center rotate-[90deg]" onClick={ClickOnSkillsFrame}>  
-          <div className="mont-real-font text-[16px] m-[5px]">Skills</div>
-          <FontAwesomeIcon icon={faPlay} className="cursor-pointer w-[50px] h-[35px] rotate-[90deg] text-[#D9D9D9]"/>
+        <div className="flex flex-col w-[130px] h-[95px] absolute left-0 top-1/2 transform -translate-y-1/2 text-third justify-center items-center rotate-[90deg] max-[1000px]:w-[70px] max-[1000px]:h-[50px]" onClick={ClickOnSkillsFrame}>  
+          <div className="mont-real-font text-[16px] m-[5px] max-[1000px]:text-[10px]">Skills</div>
+          <FontAwesomeIcon icon={faPlay} className="cursor-pointer w-[50px] h-[35px] rotate-[90deg] text-[#D9D9D9] max-[1000px]:w-[20px] max-[1000px]:h-[20px]"/>
         </div>
       </div>
       <div className="flex flex-row items-center">
@@ -103,7 +103,7 @@ function App() {
         </div>
         <div className="max-[1000px]:m-[100px]">
           
-          <div className="mont-real-font bolder text-[50px] text-third">
+          <div className="mont-real-font bolder text-[50px] text-third max-[1000px]:text-[25px]">
             <TypeAnimation
               sequence={[
                 'Hi!', 
@@ -114,7 +114,7 @@ function App() {
             />
           
           </div>
-          <div className="w-[90%] roboto-condensed-font text-[25px] text-third">
+          <div className="w-[90%] roboto-condensed-font text-[25px] text-third max-[1000px]:text-[14px]">
               I'm Francisco Conceição, a passionate software developer with a passion for creating innovative and efficient software solutions.
               <br/>
               Browse through my portfolio to see my lastest projects and more about my academic and professional journey. 
