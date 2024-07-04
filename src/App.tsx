@@ -88,7 +88,7 @@ function App() {
           <div className="mont-real-font text-[16px] m-[5px] max-[1000px]:text-[10px]">Projects</div>
           <FontAwesomeIcon icon={faPlay} className="cursor-pointer w-[50px] h-[35px] rotate-[90deg] text-[#D9D9D9] max-[1000px]:w-[20px] max-[1000px]:h-[20px]"/>
         </div>
-        <div className="flex flex-col w-[130px] h-[95px] absolute right-0 top-1/2 transform -translate-y-1/2 text-third justify-center items-center rotate-[270deg] max-[1000px]:w-[90px] max-[1000px]:h-[50px]" onClick={ClickOnCVContactFrame}>  
+        <div className="flex flex-col w-[130px] h-[95px] absolute right-0 top-1/2 transform -translate-y-1/2 text-third justify-center items-center rotate-[270deg] max-[1000px]:w-[70px] max-[1000px]:h-[50px]" onClick={ClickOnCVContactFrame}>  
           <div className="mont-real-font text-[16px] m-[5px] max-[1000px]:text-[10px]">Contact & CV</div>
           <FontAwesomeIcon icon={faPlay} className="cursor-pointer w-[50px] h-[35px] rotate-[90deg] text-[#D9D9D9] max-[1000px]:w-[20px] max-[1000px]:h-[20px]"/>
         </div>
